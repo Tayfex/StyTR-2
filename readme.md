@@ -26,6 +26,42 @@ The overall pipeline of our StyTr^2 framework. We split the content and style im
 * PIL, numpy, scipy
 * tqdm  <br> 
 
+---
+
+Another possible setup was tested using Python 3.7:
+
+      certifi==2024.2.2
+      charset-normalizer==3.3.2
+      cycler==0.11.0
+      fonttools==4.38.0
+      future==1.0.0
+      idna==3.7
+      kiwisolver==1.4.5
+      matplotlib==3.5.3
+      numpy==1.21.6
+      nvidia-cublas-cu11==11.10.3.66
+      nvidia-cuda-nvrtc-cu11==11.7.99
+      nvidia-cuda-runtime-cu11==11.7.99
+      nvidia-cudnn-cu11==8.5.0.96
+      packaging==24.0
+      Pillow==9.5.0
+      pyparsing==3.1.2
+      python-dateutil==2.9.0.post0
+      requests==2.31.0
+      scipy==1.7.3
+      six==1.16.0
+      torch==1.6.0
+      torchvision==0.7.0
+      typing_extensions==4.7.1
+      urllib3==2.0.7
+
+> **NOTE:** On newer Ubuntu (24.04) it might be easier to install Python 3.7 because it can be added and installedfrom deadsnakes PPA using the following commands:
+>```
+>sudo add-apt-repository ppa:deadsnakes/ppa
+>sudo apt update
+>sudo apt install python3.7
+>sudo apt install python3.7-venv
+>```
 ### Testing 
 Pretrained models: [vgg-model](https://drive.google.com/file/d/1BinnwM5AmIcVubr16tPTqxMjUCE8iu5M/view?usp=sharing),  [vit_embedding](https://drive.google.com/file/d/1C3xzTOWx8dUXXybxZwmjijZN8SrC3e4B/view?usp=sharing), [decoder](https://drive.google.com/file/d/1fIIVMTA_tPuaAAFtqizr6sd1XV7CX6F9/view?usp=sharing), [Transformer_module](https://drive.google.com/file/d/1dnobsaLeE889T_LncCkAA2RkqzwsfHYy/view?usp=sharing)   <br> 
 Please download them and put them into the floder  ./experiments/  <br> 
