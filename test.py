@@ -170,8 +170,12 @@ for content_path in content_paths:
         content = content.to(device).unsqueeze(0)
         
         with torch.no_grad():
-            output= network(content,style)       
-        output = output.cpu()
+            output= network(content,style)
+
+        if isinstance(output, tuple):
+            output = output[0].cpu()
+        else:
+            output = output.cpu()
                 
         output_name = '{:s}/{:s}_stylized_{:s}{:s}'.format(
             output_path, splitext(basename(content_path))[0],
